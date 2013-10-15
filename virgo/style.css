@@ -1,0 +1,438 @@
+/*   
+Theme Name: VIRGO
+Theme URI: http://virgo.fi
+Description: The theme for virgo.fi
+Author: Le Vinh Nghi
+Author URI: http://about.me/l.e
+Template: virgo-blank
+Version: 2.0
+*/
+html {overflow-y: scroll;}
+body { 
+	background: black; 
+	color: white;
+	font-family: Helvetica, Arial;
+	font-size: 11px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*------------------------------------------------------------------------------------*/
+ul { margin: 0; padding: 0; list-style: none; }
+li { margin: 0; }
+p { padding: 0; margin: 0 0 10px 0; }
+
+a, 
+a:visited, 
+a:link { text-decoration: none; color: white}
+a:visited { color: white; }
+a:hover { text-decoration: underline; }
+
+.coverbg {
+	background-repeat: no-repeat;
+	background-position: top right;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -999;
+	height: 100%;
+	width: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait) {
+	.coverbg {
+		height: 960px;
+		width: 768px;
+		background-position: center center;
+	}
+}
+
+
+
+/* Navigation
+----------------------------------------------------------- */
+#nav  #lang{
+	margin-top:15px;
+	margin-right:30px;
+    float: right;
+}
+#nav { 
+	background: rgba(16, 16, 17, 0.70);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	z-index: 9003;
+	height: 40px;
+}
+
+#nav ul { 
+	display: block;
+	margin-left: 10px;
+}		
+
+#nav li { 
+	float: left;
+	position: relative;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+
+				
+#nav li a {
+	color: white;
+	display: block;
+	padding: 10px 10px;
+	line-height: 22px;
+}
+		
+#nav li a:hover { color: white; }
+
+#nav .subnav {
+	background: rgba(16, 16, 17, 0.7);
+	position: absolute;
+	top: 40px;
+	left: 0;
+	margin: 0;
+	padding: 0 0 10px 0;
+	list-style-type: none;
+	width: 200px;
+	display: none;
+}
+
+#nav .has-subnav:hover .subnav { display: block; }
+
+#nav .subnav li {
+	font-size: 10px;
+	line-height: 16px;
+	float: none;
+}
+
+#nav .subnav li a { padding: 2px 10px; }
+
+
+
+/* Frontpage Games highlight
+----------------------------------------------------------- */
+
+#games li {
+	background-size: cover;
+	-moz-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+				
+#games li .desc {
+	background: rgba(128, 0, 0, 0.6);
+	color: white;
+	font-family: Helvetica, Arial;
+	font-size: 11px;
+	line-height: 18px;
+			
+	width: 250px;
+			
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 9002;
+}
+				
+#games li h2 {
+	font-size: 11px;
+	text-transform: uppercase;
+	margin: 10px 20px;
+}
+		
+#games li p { 
+	display: none; 
+	margin: 0 20px 20px 20px;
+}
+
+
+
+
+/* all-games-container
+----------------------------------------------------------- */
+#all-games-container {
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	width: 400px;
+	padding: 0;
+	z-index: 1;
+}
+
+.games-about { padding: 80px 20px 20px; }
+
+#all-games-container h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#all-games-container .gallery img,
+#all-games-container #gallery-1 { border: 0; }
+
+#all-games-container .gallery {
+	margin-left: -4px;
+}
+
+#all-games-container #gallery-1 .gallery-item { 
+	text-align: left;
+	margin: 0 0 1px 4px; 
+	width: auto;
+}
+
+#all-games-container #gallery-1 .gallery-item a { display: block; }
+
+#all-games-container li { 
+	color: #b0b0b0;
+	line-height: 14px;
+	padding: 2px 0; 
+}
+
+#all-games-container li span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+#all-games-container li a { color: white; }
+
+
+/* About page
+----------------------------------------------------------- */
+
+body.single-about,
+body.post-type-archive { 
+	background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	overflow: auto; 
+}
+
+.about-text h2,
+.single-about h2 {
+	margin: 25px 0 10px 0;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.quote {
+	color: white;
+	font-size: 24px;
+	padding-left: 420px;
+	position: fixed;
+	top: 80px;
+	right: 40px;
+}
+
+.about-text {
+	font-size: 13px;
+	padding: 80px 20px 20px;
+}
+
+.single-about #games-container .about-text h1 {
+	margin-bottom: 10px;
+}
+
+.about-text img { border: 0; }
+
+.about-text .introtext {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#people-list { margin-left: -4px; }
+
+	#people-list li { 
+		float: left;
+		font-size: 11px;
+		margin-left: 4px;
+		overflow: hidden;
+		width: 178px;
+	}
+
+	#people-list li a { 
+		color: #cacaca; 
+		white-space: nowrap;
+	}
+
+
+
+
+
+/* Common
+----------------------------------------------------------- */
+
+#main-content {
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	width: 50%;
+	padding: 80px 20px 20px 400px;
+	margin: 0 auto;
+}
+
+#main-content a { text-decoration: underline; }
+
+#main-content ul {
+	margin: 20px 0;
+	
+}
+
+#main-content li {
+	list-style: circle;
+	margin-left: 20px;
+}
+
+.header-info { margin: -10px 0 20px; }
+.header-info p { margin-bottom: 5px; }
+
+.attachments {
+	margin: 20px 0;
+}
+
+	#main-content .attachments li {
+		min-height: 48px;
+		line-height: 48px;
+		padding-left: 50px;
+		display: block;
+		margin-bottom: 10px;
+		margin-left: 0;
+	}
+
+		.attachments li.applicationpdf { background: url(img/pdf.png) left center no-repeat; }
+		.attachments li.applicationvnd-ms-powerpoint { background: url(img/ppt.png) left center no-repeat; }
+		.attachments li.videoasf { background: url(img/avi.png) left center no-repeat; }
+		.attachments li.videoavi { background: url(img/avi.png) left center no-repeat; }
+		.attachments li.applicationzip { background: url(img/zip.png) left center no-repeat; }
+		.attachments li.videoquicktime { background: url(img/qt.png) left center no-repeat; }
+
+#aside-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	width: 400px;
+}
+
+#aside-container {
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	width: 400px;
+	padding: 0 0 20px 0;
+	z-index: 1;
+}
+
+.aside-content {
+	padding: 80px 20px 20px;
+}
+
+#main-content h1,
+.aside-content h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#extras-container {
+	color: #CCC;
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 100%;
+	width: 200px;
+	padding: 0;
+	z-index: 1;
+}
+
+#extras-text {
+	padding: 120px 20px 20px;
+}
+
+#extras-container h3 {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	
+}
+
+
+
+
+/* Media queries
+----------------------------------------------------------- */
+
+@media screen and (max-width: 200px) {
+	.single-jobs #content,
+	.post-type-archive-jobs #content {
+		background: rgba(0,0,0,0.8);
+		max-width: 600px;
+		width: auto;
+	}
+
+	#about-jobs {
+		max-width: 560px;
+		width: auto;
+	}
+
+	#nav-jobs { display: none; }
+
+	#nav-jobs-dropdown {
+	}
+
+}
+
+
+.hackathon, .hackathon:visited {
+	display: block;
+	border: 1px solid #A60;
+	color: #A60;
+	padding: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
