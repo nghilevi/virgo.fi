@@ -19,6 +19,7 @@ screenshot.png
 I then also added some new php files:
 
 attachment.php
+
 loading.gif
 page-about.php (designed for the about page)
 page-game.php (designed for the game page)
