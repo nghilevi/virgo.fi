@@ -3,6 +3,8 @@ virgo.fi-theme
 
 This theme is just still for testing and educational purpose only.
 
+![ScreenShot](https://raw.github.com/vinhnghi223/virgo.fi-theme/screenshot.jpg)
+
 The theme was built on virgo-blank which is just a blank wordpress theme created by famed web designer and developer Chris Coyier. I only did some minor changes for the background as well as some CSS preprocessors. 
 
 The full-fledged theme system is located in virgo.fi-theme which can be found at:
