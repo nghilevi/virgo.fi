@@ -1,7 +1,7 @@
-virgo.fi-theme
+Game Portfolio Wordpress Theme
 ==============
 
-This theme is just still for testing and educational purpose only.
+For testing and educational purpose uses.
 
 ![ScreenShot](https://raw.github.com/vinhnghi223/virgo.fi-theme/master/screenshot.jpg)
 
